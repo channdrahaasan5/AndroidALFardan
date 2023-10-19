@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="AED"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/dropdown"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

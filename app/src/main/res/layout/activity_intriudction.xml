@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroductionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/_20sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Introduction"
+            android:textColor="@color/darktextcolor"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="A currency exchange is a licensed business that allows customers to exchange one currency for another. Currency exchange of physical money (coins and paper bills) is usually done over the counter at a teller station, which can be found in various places such as airports, banks, hotels, and resorts."
+            android:textColor="@color/darktextcolor"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

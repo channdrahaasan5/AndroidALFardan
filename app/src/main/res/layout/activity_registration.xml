@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Registration"
+            android:textColor="@color/darktextcolor"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/edittext_bg">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:hint="Username"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext_bg">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Email"
+                android:singleLine="true"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext_bg">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="numberPassword"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext_bg">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Confirm Password"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/blue"
+            android:text="submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+</RelativeLayout>
