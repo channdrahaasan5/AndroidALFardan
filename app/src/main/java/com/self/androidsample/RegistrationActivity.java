@@ -18,8 +18,7 @@ import java.util.regex.Pattern;
 public class RegistrationActivity extends AppCompatActivity {
     AppCompatEditText userName, email, password, confirm_password;
     AppCompatButton submit;
-    public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
-            Pattern.compile("\"[_a-zA-Z0-9]+(\\\\.[A-Za-z0-9]*)*@[A-Za-z0-9]+\\\\.[A-Za-z0-9]+(\\\\.[A-Za-z0-9]*)*", Pattern.CASE_INSENSITIVE);
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +64,7 @@ public class RegistrationActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Enter EmailID", Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (validate(String.valueOf(email.getText()))) {
+        if (!email.getText().toString().trim().matches(emailPattern)) {
             Toast.makeText(this, "Please Enter Valide EmailID", Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -82,9 +81,5 @@ public class RegistrationActivity extends AppCompatActivity {
             return false;
         }
         return true;
-    }
-    public static boolean validate(String emailStr) {
-        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
-        return matcher.matches();
     }
 }

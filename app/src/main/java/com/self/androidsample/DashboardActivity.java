@@ -51,6 +51,7 @@ public class DashboardActivity extends AppCompatActivity implements AdapterView.
                 editor.apply();
                 Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
